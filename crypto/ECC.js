@@ -1,3 +1,5 @@
+// https://paulmillr.com/posts/noble-secp256k1-fast-ecc/
+
 const CURVE = {
     P: 2n ** 256n - 2n ** 32n - 977n,
     n: 2n ** 256n - 432420386565659656852420866394968145599n
