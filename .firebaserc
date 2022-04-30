@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "public-private-key-generator"
+  }
+}

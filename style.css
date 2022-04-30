@@ -1,0 +1,113 @@
+/* !!! FIX LATER !!! */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(2, 1, 43, 0.5) 4%, rgb(94, 2, 83, 0.5) 49%, rgb(148, 0, 0, 0.5) 100%);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+/* #main {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    transform: translateY(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+
+#generate {
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(0, 0, 32);
+    border: none;
+    border-radius: 10px;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#generate:hover {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.25rem;
+}
+
+/* #output {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+#copyBtn {
+    /* display: none; */
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(0, 0, 32);
+    color: white;
+    text-shadow: 2px 2px black;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+#copyBtn:hover {
+    /* transform: translateY(0.1rem); */
+    padding: 0.3rem 0.7rem;
+}
+
+.key {
+    display: none;
+    padding: 1rem 1.4rem 0.8rem 1.4rem;
+    /* max-width: 100%; */
+    overflow-x: auto;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 50px;
+    text-shadow: 1px 1px black;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    white-space: nowrap;
+}
+
+#copiedToClipboardMessage {
+    /* display: none; */
+    /* width: 3rem; */
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 2px 1px rgba(0, 0, 0);
+}
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+    height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 32, 0.25);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 32);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 0, 48);
+    cursor: pointer;
+}
